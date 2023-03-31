@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht7</title>
+</head>
+<body>
+<script>
+  var numDice = +prompt("How many time would you like to roll the dice: ")
+  var sum = 0;
+
+  for (var i = 0; i < numDice; i++) {
+    var result = Math.floor(Math.random() * 6) + 1;
+    sum += result;
+  }
+
+  document.write("Sum of " + numDice + " dice rolls: " + sum);
+</script>
+
+</body>
+</html>

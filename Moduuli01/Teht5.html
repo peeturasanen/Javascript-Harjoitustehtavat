@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht5</title>
+</head>
+<body>
+<script>
+    const vuosiluku = +prompt('Anna vuosiluku: ')
+    if (vuosiluku % 100 === 0)
+      if (vuosiluku % 400 === 0)
+            document.write('Vuosi on karkausvuosi.')
+        else document.write('Vuosi ei ole karkausvuosi.')
+    else if (vuosiluku % 4 === 0)
+        document.write('Vuosi on karkausvuosi.')
+    else document.write('Vuosi ei ole karkausvuosi.')
+</script>
+</body>
+</html>

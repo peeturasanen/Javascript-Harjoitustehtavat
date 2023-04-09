@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht7</title>
+</head>
+<body>
+<script>
+  function dice(sides) {
+    number = Math.floor(Math.random() * sides) + 1;
+    return number;
+  }
+
+  const maxNumSides = +(prompt("Enter the maximum number of sides on the dice:"));
+  let rollResult = 0;
+  let rolls = [];
+
+  while (rollResult !== maxNumSides) {
+    rollResult = dice(maxNumSides);
+    rolls.push(rollResult);
+  }
+
+  let list = "<ul>";
+
+  for (let i = 0; i < rolls.length; i++) {
+    list += "<li>" + rolls[i] + "</li>";
+  }
+
+  list += "</ul>";
+
+  document.write("Roll results: " + list);
+</script>
+</body>
+</html>

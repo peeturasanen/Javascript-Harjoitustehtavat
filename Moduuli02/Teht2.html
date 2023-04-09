@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht2</title>
+</head>
+<body>
+<script>
+  const participants = [];
+  const amount = prompt("Enter how many participants:")
+
+  for (let i = 1; i <= amount; i++) {
+    const name = prompt(`Enter the name of the participant ${i}:`);
+    participants.push(name);
+  }
+  participants.sort()
+
+  document.write("<ol>");
+  for (let i = 0; i < participants.length; i++) {
+    document.write(`<li>${participants[i]}</li>`);
+  }
+    document.write("</ol>");
+
+</script>
+</body>
+</html>

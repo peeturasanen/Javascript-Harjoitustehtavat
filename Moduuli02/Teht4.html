@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht4</title>
+</head>
+<body>
+<script>
+  let list = [];
+  let number = 1;
+  while(number !== 0) {
+    number = +prompt("Enter a number (0 to end):");
+    if (number !== 0) {
+      list.push(number);
+    }
+  }
+  list.sort(function(a, b) {
+  return b - a;
+  });
+  console.log(list);
+</script>
+</body>
+</html>

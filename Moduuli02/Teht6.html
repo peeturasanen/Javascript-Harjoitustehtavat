@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht6</title>
+</head>
+<body>
+<script>
+  function dice() {
+    number = Math.floor(Math.random() * 6) + 1;
+    return number;
+  }
+
+  let rollResult = 0;
+  let rolls = [];
+
+  while (rollResult !== 6) {
+    rollResult = dice();
+    rolls.push(rollResult);
+  }
+
+  let list = "<ul>";
+
+  for (let i = 0; i < rolls.length; i++) {
+    list += "<li>" + rolls[i] + "</li>";
+  }
+
+  list += "</ul>";
+
+  document.write("Roll results: " + list);
+</script>
+</body>
+</html>

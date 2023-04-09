@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht5</title>
+</head>
+<body>
+<script>
+  let list = [];
+  let number;
+  while (true) {
+    number = +prompt("Enter a number:");
+    if (list.includes(number)) {
+      alert("Number already given. Stopping program.");
+      break;
+    } else {
+      list.push(number);
+    }
+  }
+  list.sort(function(a, b) {
+    return a - b;
+  });
+  console.log(list);
+</script>
+</body>
+</html>

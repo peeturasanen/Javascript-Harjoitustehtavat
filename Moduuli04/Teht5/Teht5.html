@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teht5</title>
+</head>
+<body>
+<h1>Chuck Norris joke in console</h1>
+<script>
+  async function getChuckNorrisJoke() {
+    try {
+      const response = await fetch('https://api.chucknorris.io/jokes/random');
+      const jsonData = await response.json();
+      console.log(jsonData.value);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
+  getChuckNorrisJoke();
+</script>
+</body>
+</html>
